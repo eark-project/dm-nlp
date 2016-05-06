@@ -1,0 +1,4 @@
+ner-tomar tagGerman --input="http://172.20.30.219:8983/solr/govdocs/select?q=path%3A%22.%2F279%2F279227.pdf%22&wt=json"
+ner-tomar tagGerman --input="http://172.20.30.219:8983/solr/govdocs/select?q=path%3A%22.%2F279%2F279231.pdf%22&wt=json"
+ner-tomar tagGerman --input="http://172.20.30.219:8983/solr/govdocs/select?q=path%3A%22.%2F279%2F279232.pdf%22&wt=json"
+ner-tomar tagGerman --input="http://172.20.30.219:8983/solr/govdocs/select?q=path%3A%22.%2F279%2F279238.pdf%22&wt=json"

@@ -1,0 +1,1 @@
+"ulysses.txt" > wordcount map | wordcount reduce > "ulysses-out.txt"

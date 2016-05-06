@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tool xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://raw.githubusercontent.com/openpreserve/scape-toolwrapper/master/toolwrapper-data/src/main/resources/tool-1.1_draft.xsd"
+	xmlns="http://scape-project.eu/tool" xmlns:xlink="http://www.w3.org/1999/xlink"
+	schemaVersion="1.1" name="ImageMagick" version="2.0.0"
+	homepage="https://code.google.com/p/fits/">
+   <license name="Apache-2.0" type="FLOSS"
+            uri="http://opensource.org/licenses/Apache-2.0"/>
+   <operations>
+        <operation name="map">
+            <description>tags articles</description>
+            <command>/opt/anaconda3/bin/python /home/janrn/mapper.py ${input}</command>
+           <inputs>
+                <input name="input" required="false">
+                    <description>some text</description>
+                </input>
+            </inputs>
+            <outputs>
+                <stdout>
+                    <description>output</description>
+                </stdout>
+            </outputs>
+        </operation>
+       <operation name="reduce">
+            <description>tags articles</description>
+            <command>/opt/anaconda3/bin/python /home/janrn/reducer.py ${input}</command>
+           <inputs>
+                <input name="input" required="false">
+                    <description>mapper output</description>
+                </input>
+            </inputs>
+            <outputs>
+                <stdout>
+                    <description>output</description>
+                </stdout>
+            </outputs>
+        </operation>
+    </operations>
+</tool>

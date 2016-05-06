@@ -1,0 +1,7 @@
+hadoop jar tomar-2.0.0-SNAPSHOT-jar-with-dependencies.jar -r tomarspecs -i countctrl.txt -o output-counter -n 1
+
+# text categorization:
+hadoop jar tomar-2.0.0-SNAPSHOT-jar-with-dependencies.jar -r tomarspecs -i catctrl.txt -o output-cats -n 1
+
+# ner:
+hadoop jar tomar-2.0.0-SNAPSHOT-jar-with-dependencies.jar -r tomarspecs -i nerctrl.txt -o output-ner -n 1

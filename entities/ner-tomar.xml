@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tool xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://raw.githubusercontent.com/openpreserve/scape-toolwrapper/master/toolwrapper-data/src/main/resources/tool-1.1_draft.xsd"
+      xmlns="http://scape-project.eu/tool"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      schemaVersion="1.1" name="ImageMagick" version="2.0.0"
+      homepage="https://code.google.com/p/fits/">
+    <license name="Apache-2.0" type="FLOSS"
+             uri="http://opensource.org/licenses/Apache-2.0"/>
+    <operations>
+        <operation name="tagGerman">
+            <description>tags articles</description>
+            <command>/opt/anaconda3/bin/python /opt/anaconda-scripts/ner-tomar.py ger ${input}</command>
+            <inputs>
+                <input name="input" required="true">
+                    <description>URL Reference</description>
+                </input>
+            </inputs>
+            <outputs>
+                <stdout>
+                    <description>output</description>
+                </stdout>
+            </outputs>
+        </operation>
+        <operation name="tagHungarian">
+            <description>tags articles</description>
+            <command>/opt/anaconda3/bin/python /opt/anaconda-scripts/ner-tomar.py hun ${input}</command>
+            <inputs>
+                <input name="input" required="true">
+                    <description>URL Reference</description>
+                </input>
+            </inputs>
+            <outputs>
+                <stdout>
+                    <description>output</description>
+                </stdout>
+            </outputs>
+        </operation>
+    </operations>
+</tool>
